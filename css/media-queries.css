@@ -1,0 +1,66 @@
+@media screen and (max-width: 768px) {
+
+    .s-form {
+        padding-bottom: 40px;
+    }
+
+    .s-form .container {
+        flex-direction: column;
+    }
+
+    .about-text {
+        padding-bottom: 3em;
+        width: 100%;
+    }
+
+    .about-text h2 {
+        font-size: 38px;
+    }
+
+    .s-about {
+        padding: 0;
+    }
+
+    .checkbox, .radio {
+        width: calc(50% - 10px);
+    }
+
+    .radio {
+        width: 100%;
+    }
+
+    .s-about {
+        padding-top: 4em;
+    }
+
+    #about div {
+        width: 100%;
+    }
+
+    .about-title {
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    #about div select {
+        font-size: 13px;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .footer .container {
+        flex-direction: column;
+        padding-top: 4em;
+        padding-bottom: 2em;
+    }
+
+    .footer-column {
+        margin: 0 auto 4em;
+    }
+
+    .footer-column h3,
+    .footer-column p {
+        text-align: center;
+    }
+}

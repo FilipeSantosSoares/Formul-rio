@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="author" content="Filipe Santos"/>
+    <meta name="description" content="Formulário Clickwise Agency."/>
+    <meta name="keywords" content="Formulário, agência, marketing digital, projeto, web"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="theme-color" content="#13293d"/>
+    <meta name="copyright" content="Filipe Santos"/>
+    <meta http-equiv="content-language" content="pt-br"/>
+    <meta property="og:title" content="Formulário - Clickwise Agency"/>
+    <meta property="og:description" content="Clickwise Agency - Deixe seu projeto em boas mãos."/>
+    <title>Clickwise Agency - Formulário</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.8.1/slick.css" />
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.slick/1.8.1/slick.min.js"></script>
+
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/media-queries.css">
+</head>
+<body>
+
+    <header class="s-form">
+        <div class="container">
+            <div class="form-text">
+                <h1><a href="index.html" class="logo">Clickwise Agency</a></h1>
+                <h2>Deixe seu projeto em boas mãos!</h2>
+                <p>Preencha corretamente as informações do formulário para que um de nossos especialistas entre em contato.</p>
+            </div>
+
+
+            <div class="s-about">
+                <div id="about">
+                    <div class="about-title">
+                        <h2>Sobre</h2>
+                        <span>Informações para que possamos entrar em contato</span>
+                    </div>
+                    <div class="name">
+                        <label for="name">Nome *</label>
+                        <input type="text" name="name" id="name" placeholder="Nome completo" pattern="[a-zA-Z\s\u00C0-\u00FF]{1,}" required>
+                        <span id="nameError" class="error">Por favor, insira um nome válido (somente letras e espaços).</span>
+                    </div>
+                    <div>
+                        <label for="email">E-mail *</label>
+                        <input type="email" name="email" id="email" placeholder="Seu e-mail"  required>
+                        <span id="emailError" class="error">Por favor, insira um e-mail válido.</span>
+                    </div>
+                    <div>
+                        <label for="phone">Telefone *</label>
+                        <input type="tel" name="phone" id="phone" class="celular-input" placeholder="(00) 0000-0000" pattern="^[0-9\-\+\s\(\)]*$" maxlength="15" required>
+                        <span id="phoneError" class="error">Por favor, insira um telefone válido.</span>
+                    </div>
+                    <div>
+                        <label for="company">Empresa *</label>
+                        <input type="text" name="company" id="company" placeholder="Nome da sua empresa" required>
+                        <span id="companyError" class="error">Este campo é obrigatório.</span>
+                    </div>
+                    <div>
+                        <label for="select">Como nos conheceu *</label>
+                        <select name="select" id="select" required>
+                            <option value="" disabled="disabled" selected>Selecione</option>
+                            <option value="Google">Google</option>
+                            <option value="Instagram">Instagram</option>
+                            <option value="Facebook">Facebook</option>
+                            <option value="Indicação">Indicação</option>
+                            <option value="Já sou cliente">Já sou cliente</option>
+                            <option value="Outro">Outro</option>
+                        </select>
+                        <span id="selectError" class="error">Por favor, selecione uma opção.</span>
+                    </div>
+                    <div class="name">
+                        <label for="message">Faça uma breve descrição do seu projeto *</label>
+                        <textarea name="message" id="message" placeholder="Essas informações são essenciais para que possamos entender a demanda" required></textarea>
+                        <span id="messageError" class="error">Este campo é obrigatório.</span>
+                    </div>
+                    <div>
+                        <p>Ao enviar o formulário, eu declaro que estou de acordo com a <a href="#">Política de privacidade</a>.</p>
+                    </div>
+                    <div class="about_btn">
+                        <input type="submit" name="enviar" class="btn_about" value="solicitar orçamento" onclick="validateForm()">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <footer class="footer">
+        <div class="container">
+            <li class="footer-column">
+                <h3>Clickwise Agency</h3>
+                <p>Clickwise Agency © 2009 - 2024</p>
+                <a href="#">Política de privacidade</a><a href="#" class="work">Trabalhe conosco</a>
+            </li>
+            <li class="footer-column">
+                <h3>Onde estamos</h3>
+                <p>Rua das Flores, 123 Bairro Jardim das Rosas <br>São Paulo SP CEP: 04567-890<a href="#">Ver mapa</a></p>
+            </li>
+            <li class="footer-column">
+                <h3>Redes sociais</h3>
+                <div class="footer-network">
+                    <a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+                    <a href="#"><i class="fa fa-youtube-play" aria-hidden="true"></i></a>
+                </div>
+            </li>
+        </div>
+    </footer>
+
+    <script src="javascript/validation.js"></script>
+</body>
+</html>
