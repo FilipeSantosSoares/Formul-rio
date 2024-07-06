@@ -287,16 +287,17 @@ div select:focus {
 
 
 .error {
-    color: red;
-    font-size: 11px;
+    color: #333232;
+    font-size: 13px;
     display: none;
     position: absolute;
     background-color: white;
-    border: 1px solid red;
-    padding: 5px;
+    border: 1px solid #7b7a7a;
+    padding: 10px 5px;
     border-radius: 5px;
     box-shadow: 0 0 5px rgba(0,0,0,0.3);
     z-index: 1000;
+    margin-top: 10px;
 }
 
 .error.visible {
@@ -309,7 +310,7 @@ div select:focus {
     top: -10px;
     left: 50%;
     transform: translateX(-50%);
-    border-width: 6px;
+    border-width: 8px;
     border-style: solid;
-    border-color: red transparent transparent transparent;
+    border-color: #f5a80e transparent transparent transparent;
 }
